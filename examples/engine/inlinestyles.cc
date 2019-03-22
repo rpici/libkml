@@ -42,7 +42,7 @@ bool InlineStyles(const char* input_filename, const char* output_filename) {
   kmldom::ElementPtr root = kmlengine::InlineStyles(kml_input, &errors);
   if (!root) {
     std::cerr << "parse failed: " << input_filename << std::endl;
-    std::cerr << "parse failed: " << errors << std::cerr;
+    std::cerr << "parse failed: " << errors << std::endl;
     return false;
   }
 
